@@ -47,6 +47,9 @@
     [_testModel setValue:@"广州" forKeyPath:@"_address"];
     [_testModel printPrivatePropertyValue];
     
+
+    
+    
     
     // Do any additional setup after loading the view, typically from a nib.
 }

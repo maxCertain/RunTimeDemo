@@ -44,17 +44,19 @@
 
 + (void)load{
     
-    NSLog(@"%s",__func__);
+    Method m1 = class_getInstanceMethod(self, @selector(printPrivatePropertyValue));
+    Method m2 = class_getInstanceMethod(self, @selector(changemoethod));
     
-    Method changeName = class_getClassMethod(self, @selector(changeName:));
-    Method addDescribewithName = class_getClassMethod(self, @selector(addDescribeWithChangeName:));
-    
-    method_exchangeImplementations(changeName, addDescribewithName);
+    method_exchangeImplementations(m2, m1);
     
 }
 
 - (void)printPrivatePropertyValue{
     NSLog(@"%@",_address);
+}
+
+- (void)changemoethod{
+    NSLog(@"change log is %@",_address);
 }
 
 @end
