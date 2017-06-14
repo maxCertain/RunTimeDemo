@@ -31,7 +31,7 @@
         NSLog(@"name is %@",value);
     }
     
-    //Runtime
+    //Runtime 有点多余
     setValueWithObjectProperty(_testModel, @"_describe", @"will change");
     NSLog(@"%@",self.testModel.describe);
 
