@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D165DDF01EF21DC900A0CFCD /* UIButton+CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D165DDEF1EF21DC900A0CFCD /* UIButton+CustomButton.m */; };
 		D16D58801EF0C96A0045C1B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D16D587F1EF0C96A0045C1B4 /* main.m */; };
 		D16D58831EF0C96A0045C1B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D16D58821EF0C96A0045C1B4 /* AppDelegate.m */; };
 		D16D58861EF0C96A0045C1B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16D58851EF0C96A0045C1B4 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D165DDEE1EF21DC900A0CFCD /* UIButton+CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CustomButton.h"; sourceTree = "<group>"; };
+		D165DDEF1EF21DC900A0CFCD /* UIButton+CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CustomButton.m"; sourceTree = "<group>"; };
 		D16D587B1EF0C96A0045C1B4 /* RunTimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16D587F1EF0C96A0045C1B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D16D58811EF0C96A0045C1B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +122,8 @@
 				D16D587E1EF0C96A0045C1B4 /* Supporting Files */,
 				D16D58B21EF0C9AD0045C1B4 /* TestModel.h */,
 				D16D58B31EF0C9AD0045C1B4 /* TestModel.m */,
+				D165DDEE1EF21DC900A0CFCD /* UIButton+CustomButton.h */,
+				D165DDEF1EF21DC900A0CFCD /* UIButton+CustomButton.m */,
 			);
 			path = RunTimeDemo;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				D16D58831EF0C96A0045C1B4 /* AppDelegate.m in Sources */,
 				D16D58BA1EF115E50045C1B4 /* RunTimeTools.m in Sources */,
 				D16D58801EF0C96A0045C1B4 /* main.m in Sources */,
+				D165DDF01EF21DC900A0CFCD /* UIButton+CustomButton.m in Sources */,
 				D16D58B41EF0C9AD0045C1B4 /* TestModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

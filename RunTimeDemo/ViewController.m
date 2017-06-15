@@ -10,6 +10,7 @@
 #import "TestModel.h"
 #import <objc/runtime.h>
 #import "RunTimeTools.h"
+#import "UIButton+CustomButton.h"
 
 @interface ViewController ()
 
@@ -32,7 +33,7 @@
         NSLog(@"name is %@",value);
     }
     
-    //Runtime 有点多余
+    //Runtime 
     setValueWithObjectProperty(_testModel, @"_describe", @"will change");
     NSLog(@"%@",self.testModel.describe);
 
@@ -48,6 +49,11 @@
     [_testModel setValue:@"广州" forKeyPath:@"_address"];
     
     [self methodTest];
+    
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.indexPath = [NSIndexPath indexPathForRow:5 inSection:1];
+    NSLog(@"section is  %li row is %li",btn.indexPath.section,btn.indexPath.row);
     
     // Do any additional setup after loading the view, typically from a nib.
 }
