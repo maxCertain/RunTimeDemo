@@ -44,7 +44,7 @@
 }
 
 - (NSString *)printAndGetModelAddress{
-    NSLog(@"更改方法后打印 %@",_address);
+    NSLog(@"更改方法后打印");
     return _address;
 }
 
