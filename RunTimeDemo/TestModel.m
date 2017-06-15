@@ -17,9 +17,6 @@
 
 @implementation TestModel
 
-+ (void)initialize{
-    NSLog(@"%s",__func__);
-}
 
 
 - (instancetype)init{
@@ -42,21 +39,30 @@
     NSLog(@"me_name is %@",self.name);
 }
 
-+ (void)load{
-    
-    Method m1 = class_getInstanceMethod(self, @selector(printPrivatePropertyValue));
-    Method m2 = class_getInstanceMethod(self, @selector(changemoethod));
-    
-    method_exchangeImplementations(m2, m1);
-    
+- (NSString *)getModelAddress{
+    return self.address;
+}
+
+- (NSString *)printAndGetModelAddress{
+    NSLog(@"更改方法后打印 %@",_address);
+    return _address;
+}
+
++(void)nameLog{
+    NSLog(@"xiaoming");
 }
 
 - (void)printPrivatePropertyValue{
     NSLog(@"%@",_address);
 }
 
-- (void)changemoethod{
-    NSLog(@"change log is %@",_address);
+
+- (void)printExchangePrivateMethod{
+    [self exChangemoethod];
+}
+
+- (void)exChangemoethod{
+    NSLog(@"exchange log is %@",_address);
 }
 
 @end

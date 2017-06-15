@@ -18,4 +18,10 @@
 
 - (void)printPrivatePropertyValue;
 
+- (NSString *)getModelAddress;
+
+- (NSString *)printAndGetModelAddress;
+
+- (void)printExchangePrivateMethod;
+
 @end
